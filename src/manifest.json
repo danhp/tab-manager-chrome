@@ -1,0 +1,44 @@
+{
+    "manifest_version": 2,
+
+    "name": "Tab Manager Shortcuts",
+    "version": "1.0.0",
+    "description": "Manage your chrome tabs with keyboard shortcuts.",
+    "homepage_url": "https://phamdaniel.github.io",
+    "icons": {
+        "16": "imgs/16.png",
+        "48": "imgs/48.png",
+        "128": "imgs/128.png"
+    },
+    "background": {
+        "persisten": false,
+        "scripts": ["background.js"]
+    },
+    "commands": {
+        "tab_manager_pin_current": {
+            "description": "Pin or unpin current tab.",
+            "suggested_key": {
+                "default": "Ctrl+Shift+X"
+            }
+        },
+        "tab_manager_unpin_all": {
+            "description": "Unpin all tabs in current window",
+            "suggested_key": {
+                "default": "Alt+Shift+X"
+            }
+        },
+        "tab_manager_move_left": {
+            "description": "Move selected tab left",
+            "suggested_key": {
+                "default": "Alt+Shift+J"
+            }
+        },
+        "tab_manager_move_right": {
+            "description": "Move selected tab right",
+            "suggested_key": {
+                "default": "Alt+Shift+K"
+            }
+        }
+    }
+}
+
