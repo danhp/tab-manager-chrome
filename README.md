@@ -9,4 +9,4 @@
 - [Chrome Webstore](https://chrome.google.com/webstore/detail/oofoadncochbkbpebpbndghocapamchi)
 
 ## Liscence
-MIT © [Daniel Pham](https://phamdaniel.github.io)
+MIT © [Daniel Pham](https://danhp.github.io)
