@@ -2,7 +2,7 @@
     "manifest_version": 2,
 
     "name": "Tab Manager Shortcuts",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "Manage your chrome tabs with keyboard shortcuts.",
     "homepage_url": "https://phamdaniel.github.io",
     "icons": {
