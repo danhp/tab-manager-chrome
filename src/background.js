@@ -40,7 +40,7 @@ chrome.commands.onCommand.addListener(function(command) {
             chrome.tabs.query({active: true, lastFocusedWindow: true}, function(tab) {
                 newIndex = tab[0].index - 1;
                 if (newIndex >= 0) {
-                    chrome.tabs.query({index: newIndex}, function(btab) {
+                    chrome.tabs.query({index: newIndex, lastFocusedWindow: true}, function(btab) {
                         chrome.tabs.update(btab[0].id, {active: true});
                     });
                 } else {
@@ -53,7 +53,7 @@ chrome.commands.onCommand.addListener(function(command) {
                             }
                         });
                         // update the maximum tab index to be active
-                        chrome.tabs.query({index: maxTabIndex}, function(tabMax) {
+                        chrome.tabs.query({index: maxTabIndex, lastFocusedWindow: true}, function(tabMax) {
                             chrome.tabs.update(tabMax[0].id, {active: true});
                         });
                         maxTabIndex = 0;
@@ -70,7 +70,7 @@ chrome.commands.onCommand.addListener(function(command) {
                        chrome.tabs.update(btab[0].id, {active: true});
                     } else {
                         // last tab reached, go back to first (0-based)
-                        chrome.tabs.query({index: 0}, function(tab0) {
+                        chrome.tabs.query({index: 0, lastFocusedWindow: true}, function(tab0) {
                           chrome.tabs.update(tab0[0].id, {active: true});
                         });
                     }
