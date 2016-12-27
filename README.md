@@ -8,5 +8,16 @@
 
 - [Chrome Webstore](https://chrome.google.com/webstore/detail/oofoadncochbkbpebpbndghocapamchi)
 
-## Liscence
+## License
+
 MIT © [Daniel Pham](https://danhp.github.io)
+
+## Changelog
+
+1.0.1
+- Added active/select browsing tab functionality
+- Removed default key suggestions so that [this](https://bugs.chromium.org/p/chromium/issues/detail?id=167419) bug is not hit now or in the future
+- Updated API usage to query() from getSelected() since this has been deprecated since Chrome 33
+
+1.0.0
+- Initial Release
